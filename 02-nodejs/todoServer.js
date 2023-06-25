@@ -46,4 +46,12 @@ const app = express();
 
 app.use(bodyParser.json());
 
+var todos = [];
+
+function handleGetTodos(){
+
+}
+
+app.get("/todos", handleGetTodos)
+
 module.exports = app;
